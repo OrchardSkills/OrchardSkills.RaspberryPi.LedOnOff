@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Raspberry Pi LED On/Off</h1>
+    <p>Led device supported <strong>@ViewBag.LedSupported</strong></p>
+    <p>Led is <strong>@ViewBag.LedState</strong></p>
+    <p>
+        <a asp-action="LedOn">Turn on</a> | <a asp-action="LedOff">Turn off</a>
+    </p>
+</div>
