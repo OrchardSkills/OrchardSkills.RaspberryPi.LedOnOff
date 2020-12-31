@@ -23,6 +23,7 @@ namespace OrchardSkills.RaspberryPi.LedOnOff.Devices
             catch (System.NotSupportedException e)
             {
                 ledSupported = false;
+                Console.WriteLine(e.Message);
             }
             finally
             {
