@@ -6,9 +6,10 @@ max-width: 300px;
 }
 .light-on-img {
   width: 100%;
-  max-width: 440px;
+  max-width: 443px;
   position: relative;
   right: 13px;
+  top: 1px;
 }
 a.navbar-brand {
   white-space: normal;
