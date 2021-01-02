@@ -20,10 +20,10 @@ namespace OrchardSkills.RaspberryPi.LedOnOff.Devices
                 _controller.Write(LedPin, PinValue.Low);
                 IsLedOn = false;
             }
-            catch (System.NotSupportedException e)
+            catch (Exception ex)
             {
                 ledSupported = false;
-                Console.WriteLine(e.Message);
+                Console.WriteLine(ex.Message);
             }
             finally
             {
